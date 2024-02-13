@@ -1,0 +1,55 @@
+.content {
+    padding: 24px;
+}
+
+div.fitCanCard {
+    margin-bottom: 24px;
+    max-width: 752px;
+}
+
+.fitCanText {
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--primary-light-9);
+}
+
+div.contentCardTitle {
+    margin-bottom: 16px;
+    max-width: 752px;
+}
+
+.contentTitle {
+    font-size: 20px;
+    line-height: 1.3;
+    color: var(--character-light-title-85);
+}
+
+.actionsCards {
+    max-width: 752px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.iconSvg {
+    path {
+        fill: var(--primary-light-6);
+    }
+}
+
+@media (max-width: 748px) {
+    .actionsCards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 470px) {
+    .content {
+        padding: 24px 15px;
+    }
+
+    .actionsCards {
+        gap: 8px;
+    }
+}

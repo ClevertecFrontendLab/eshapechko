@@ -1,0 +1,11 @@
+header .breadcrumbList {
+    line-height: 1.3;
+    color: var(--character-light-title-85);
+    margin-bottom: 8px;
+}
+
+@media (max-width: 470px) {
+    header .breadcrumbList {
+        margin-bottom: 0;
+    }
+}

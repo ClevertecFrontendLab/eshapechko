@@ -1,0 +1,133 @@
+aside.sider {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    background: var(--character-light-primary-inverse);
+    padding-top: 44px;
+    position: relative;
+}
+
+.logo {
+    display: block;
+    margin-left: 29px;
+    margin-bottom: 63px;
+}
+
+.logoCollapsed {
+    display: block;
+    margin: 7px 0 65px 18px;
+}
+
+ul.menu,
+ul.menuCollapsed {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.menu li {
+    padding-left: 16px !important;
+    margin-bottom: 14px !important;
+}
+
+ul.menuCollapsed li {
+    margin-bottom: 14px !important;
+}
+
+.svgIcon svg {
+    path {
+        fill: var(--primary-light-9);
+    }
+}
+
+button.sideMenuBtn {
+    width: 20px;
+    height: 66px;
+    position: absolute;
+    right: -20px;
+    top: calc(50% - 33px);
+    border: none;
+    outline: none;
+    background-color: var(--character-light-primary-inverse);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+
+button.logoutBtn {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: absolute;
+    bottom: 0;
+    border: none;
+    border-top: 1px solid var(--character-light-border);
+    padding-left: 16px;
+    height: 40px;
+    max-width: 210px;
+    width: 100%;
+    box-shadow: inset 0 1px 0 0 var(--character-light-dividers);
+}
+
+button.logoutBtn:hover svg {
+    path {
+        fill: var(--blue-light-6);
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+}
+
+@media (max-width: 680px) {
+    aside.sider {
+        padding-top: 16px;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin-left: 16px;
+        margin-bottom: 28px;
+    }
+
+    .logo img {
+        width: 72px;
+        height: 18px;
+    }
+
+    ul.menu li {
+        padding-left: 5px !important;
+        padding-right: 0 !important;
+        margin-bottom: 7px !important;
+    }
+
+    button.sideMenuBtn {
+        width: 32px;
+        height: 48px;
+        position: fixed;
+        right: 0;
+        left: 105px;
+        top: 24px;
+        z-index: 999;
+    }
+
+    button.sideMenuBtnCollapsed {
+        width: 32px;
+        height: 48px;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 24px;
+        z-index: 999;
+        border: none;
+        outline: none;
+        background-color: var(--character-light-primary-inverse);
+        clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+        transition: all 0.2s;
+    }
+
+    button.logoutBtn {
+        justify-content: center;
+        padding-left: 16px;
+        height: 40px;
+        max-width: 210px;
+        width: 100%;
+    }
+}
