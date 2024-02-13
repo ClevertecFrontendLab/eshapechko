@@ -1,11 +1,11 @@
 import { useWindowSize } from 'usehooks-ts';
 import {
     CalendarTwoTone,
-    HeartTwoTone,
+    HeartFilled,
     IdcardOutlined,
     MenuFoldOutlined,
     MenuUnfoldOutlined,
-    TrophyTwoTone,
+    TrophyFilled,
 } from '@ant-design/icons';
 import s from './SiderComponent.module.css';
 import { Button, Layout, Menu } from 'antd';
@@ -21,8 +21,8 @@ export const SiderComponent = ({ collapsed, setCollapsed }: SiderType) => {
     const { width = 0 } = useWindowSize();
 
     const calendarIcon = width <= 680 ? '' : <CalendarTwoTone className={s.svgIcon} />;
-    const heartIcon = width <= 680 ? '' : <HeartTwoTone className={s.svgIcon} />;
-    const trophyIcon = width <= 680 ? '' : <TrophyTwoTone className={s.svgIcon} />;
+    const heartIcon = width <= 680 ? '' : <HeartFilled className={s.svgIcon} />;
+    const trophyIcon = width <= 680 ? '' : <TrophyFilled className={s.svgIcon} />;
     const profileIcon = width <= 680 ? '' : <IdcardOutlined className={s.svgIcon} />;
     const exitIcon = width <= 680 ? '' : <Exit />;
 

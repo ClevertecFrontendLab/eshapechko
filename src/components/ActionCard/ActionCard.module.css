@@ -7,6 +7,7 @@
 @media (max-width: 854px) {
     .actionCard {
         text-align: start;
+        max-width: 182px;
     }
 }
 

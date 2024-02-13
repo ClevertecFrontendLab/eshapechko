@@ -156,8 +156,8 @@ p {
 
 @media (max-width: 854px) {
     .ant-card-head-title {
-        text-wrap: wrap;
         padding: 12px 24px;
+        white-space: normal;
     }
 }
 

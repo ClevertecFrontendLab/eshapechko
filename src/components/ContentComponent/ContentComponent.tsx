@@ -3,7 +3,7 @@ import { Card, Layout } from 'antd';
 const { Content } = Layout;
 import s from './ContentComponent.module.css';
 import { MyButton } from '@components/Button/Button';
-import { CalendarTwoTone, HeartTwoTone, IdcardOutlined } from '@ant-design/icons';
+import { CalendarTwoTone, HeartFilled, IdcardOutlined } from '@ant-design/icons';
 import { ActionCard } from '@components/ActionCard';
 
 export const ContentComponent: React.FC = () => (
@@ -40,7 +40,7 @@ export const ContentComponent: React.FC = () => (
                 <ActionCard title='Расписать тренировки'>
                     <MyButton
                         type='link'
-                        icon={<HeartTwoTone className={s.iconSvg} />}
+                        icon={<HeartFilled className={s.iconSvg} />}
                         title='Тренировки'
                     />
                 </ActionCard>
