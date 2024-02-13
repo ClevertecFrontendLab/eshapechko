@@ -20,7 +20,8 @@ import { SiderType } from '../../types/siderType';
 export const SiderComponent = ({ collapsed, setCollapsed }: SiderType) => {
     const { width = 0 } = useWindowSize();
 
-    const calendarIcon = width <= 680 ? '' : <CalendarTwoTone className={s.svgIcon} />;
+    const calendarIcon =
+        width <= 680 ? '' : <CalendarTwoTone twoToneColor={['#061178', '#061178']} />;
     const heartIcon = width <= 680 ? '' : <HeartFilled className={s.svgIcon} />;
     const trophyIcon = width <= 680 ? '' : <TrophyFilled className={s.svgIcon} />;
     const profileIcon = width <= 680 ? '' : <IdcardOutlined className={s.svgIcon} />;
