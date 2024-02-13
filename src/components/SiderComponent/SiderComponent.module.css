@@ -31,7 +31,7 @@ ul.menuCollapsed li {
     margin-bottom: 14px !important;
 }
 
-.svgIcon {
+.svgIcon svg {
     path {
         fill: var(--primary-light-9);
     }
