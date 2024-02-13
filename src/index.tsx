@@ -7,6 +7,7 @@ import { store } from '@redux/configure-store';
 import { MainPage } from './pages';
 
 import 'normalize.css';
+import 'antd/dist/antd.css';
 import './index.css';
 
 const domNode = document.getElementById('root') as HTMLDivElement;

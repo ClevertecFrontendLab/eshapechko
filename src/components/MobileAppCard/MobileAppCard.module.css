@@ -1,0 +1,20 @@
+div.card {
+    width: 240px;
+}
+
+div.card li {
+    margin: 14px 0;
+}
+
+button.cardBtn {
+    border: none;
+    line-height: 1.3;
+}
+
+@media (max-width: 470px) {
+    div.card {
+        width: 100%;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+}

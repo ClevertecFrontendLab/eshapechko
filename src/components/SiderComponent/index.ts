@@ -1,0 +1,1 @@
+export { SiderComponent } from './SiderComponent';

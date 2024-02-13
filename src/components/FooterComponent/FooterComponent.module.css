@@ -1,0 +1,42 @@
+footer.footer,
+footer.footerCollapsed {
+    padding: 154px 24px 42px;
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+button.feedbackBtn {
+    align-self: flex-end;
+    font-size: 16px;
+    line-height: 1.3;
+    height: 40px;
+    border: none;
+}
+
+@media (max-width: 854px) {
+    footer.footer {
+        padding-top: 237px;
+    }
+
+    footer.footerCollapsed {
+        padding-top: 362px;
+    }
+}
+
+@media (max-width: 680px) {
+    footer.footer,
+    footer.footerCollapsed {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 470px) {
+    footer.footer,
+    footer.footerCollapsed {
+        padding: 0 15px 42px;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
