@@ -9,23 +9,36 @@ import {
 } from '@ant-design/icons';
 import s from './SiderComponent.module.css';
 import { Button, Layout, Menu } from 'antd';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const { Sider } = Layout;
 import logo from '../../assets/img/main-logo.svg';
 import logoMobile from '../../assets/img/logo-sm.svg';
 import Exit from '../../assets/img/exit.svg?react';
 import { MyButton } from '@components/Button/Button';
 import { SiderType } from '../../types/siderType';
+import { useAppDispatch } from '@hooks/typed-react-redux-hooks';
+import { removeToken } from '@redux/auth/login/loginSlice';
 
 export const SiderComponent = ({ collapsed, setCollapsed }: SiderType) => {
     const { width = 0 } = useWindowSize();
+    const dispatch = useAppDispatch();
+    const navigate = useNavigate();
 
     const calendarIcon =
-        width <= 680 ? '' : <CalendarTwoTone twoToneColor={['#061178', '#061178']} />;
+        width <= 680 ? (
+            ''
+        ) : (
+            <CalendarTwoTone twoToneColor={['#061178', '#061178']} className={s.svgIcon} />
+        );
     const heartIcon = width <= 680 ? '' : <HeartFilled className={s.svgIcon} />;
     const trophyIcon = width <= 680 ? '' : <TrophyFilled className={s.svgIcon} />;
     const profileIcon = width <= 680 ? '' : <IdcardOutlined className={s.svgIcon} />;
     const exitIcon = width <= 680 ? '' : <Exit />;
+
+    const handleClickExit = () => {
+        dispatch(removeToken());
+        navigate('/auth');
+    };
 
     const items = [
         {
@@ -89,6 +102,7 @@ export const SiderComponent = ({ collapsed, setCollapsed }: SiderType) => {
                 type='default'
                 title={collapsed ? '' : 'Выход'}
                 icon={exitIcon}
+                onClick={handleClickExit}
             />
         </Sider>
     );

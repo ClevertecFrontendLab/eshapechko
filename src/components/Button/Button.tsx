@@ -8,10 +8,18 @@ type ButtonProps = {
     title?: string;
     style?: React.CSSProperties;
     onClick?: React.MouseEventHandler<HTMLElement>;
+    block?: boolean;
 };
 
-export const MyButton = ({ className, type, icon, title, style, onClick }: ButtonProps) => (
-    <Button style={style} className={className} type={type} icon={icon} onClick={onClick}>
+export const MyButton = ({ className, type, icon, title, style, onClick, block }: ButtonProps) => (
+    <Button
+        style={style}
+        className={className}
+        type={type}
+        icon={icon}
+        onClick={onClick}
+        block={block}
+    >
         {title}
     </Button>
 );

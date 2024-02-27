@@ -1,0 +1,1 @@
+export { RegistrationError } from './RegistrationError';

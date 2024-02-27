@@ -1,1 +1,11 @@
 export { MainPage } from './MainPage';
+export { AuthPage } from './AuthPage';
+export { RegistrationSuccess } from './RegistrationSuccess';
+export { RegistrationErrorUser } from './RegistrationErrorUser';
+export { RegistrationError } from './RegistrationError';
+export { LoginError } from './LoginError';
+export { CheckEmailError } from './CheckEmailError';
+export { CheckEmailNoExist } from './CheckEmailNoExist';
+export { ConfirmEmail } from './ConfirmEmail';
+export { ErrorChangePassword } from './ErrorChangePassword';
+export { SuccessChangePassword } from './SuccessChangePassword';

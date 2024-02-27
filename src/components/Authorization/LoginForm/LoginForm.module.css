@@ -1,0 +1,60 @@
+form.form {
+    width: 368px;
+    margin: 0 auto;
+}
+
+div.itemEmail {
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+.inputEmail input::placeholder,
+.inputPassword input::placeholder {
+    font-size: 14px;
+}
+
+div.itemPassword {
+    margin-bottom: 44px;
+}
+
+div.itemRemember {
+    margin-bottom: 24px;
+}
+
+div.signInBtn {
+    margin-bottom: 16px;
+}
+
+div.itemGoggle {
+    margin-bottom: 0;
+}
+
+button.formLinkBtn {
+    margin-left: 62px;
+    font-size: 16px;
+    color: var(--primary-light-6);
+    border: 1px solid transparent;
+}
+
+@media (max-width: 680px) {
+    form.form {
+        width: 296px;
+    }
+
+    button.formLinkBtn {
+        margin-left: 28px;
+        font-size: 14px;
+        padding: 0 4px;
+    }
+}
+
+@media (max-width: 470px) {
+    button.googleBtn,
+    button.loginBtn {
+        font-size: 14px;
+    }
+
+    button.googleBtn span svg {
+        display: none;
+    }
+}
