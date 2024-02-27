@@ -37,6 +37,13 @@ ul.menuCollapsed li {
     }
 }
 
+ul.menu li:hover .svgIcon svg,
+ul.menuCollapsed li:hover .svgIcon svg {
+    path {
+        fill: var(--character-light-link);
+    }
+}
+
 button.sideMenuBtn {
     width: 20px;
     height: 66px;

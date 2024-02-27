@@ -1,0 +1,1 @@
+export { RegistrationErrorUser } from './RegistrationErrorUser';
