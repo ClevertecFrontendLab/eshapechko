@@ -32,7 +32,7 @@ export const checkEmailFetch = createAsyncThunk<string, string, { rejectValue: s
                 return rejectWithValue(error.response.data.stausCode);
             }
 
-            if (error.response) {
+            if (error.response && error.response.data.message !== 'Email не найден') {
                 dispatch(push('/result/error-check-email'));
                 return rejectWithValue(error.response.status);
             }
